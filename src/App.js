@@ -1,13 +1,15 @@
-import React, { useState } from 'react';
+import Header from './component/Header';
+import Counter from './component/Counter';
+import "./Counter.css";
 
 const App = () => {
-const [count, setCount] = useState(0)
 
   return (
-    <>
-      <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>Click me</button>
-    </>
+    <div className='main'>
+
+      <Header />
+      <Counter />
+    </div>
   );
 }
 
